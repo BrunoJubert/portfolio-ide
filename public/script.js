@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = nav.querySelectorAll("a");
   const ideContainer = document.querySelector(".ide-container");
 
-  const isMobile = () => window.innerWidth < 768; // 768px est la largeur définie dans votre media query
+  const isMobile = () => window.innerWidth < 768;
 
   const closeMenu = () => {
     if (isMobile()) {
