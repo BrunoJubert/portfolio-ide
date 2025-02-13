@@ -6,49 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruno Jubert - Portfolio IDE</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/68d4cc8734.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="ide-container">
         <nav class="ide-nav">
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <button class="explorer-menu" aria-label="Menu">
+                <i class="fas fa-chevron-right"></i> EXPLORER 
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#about"><i class="fas fa-user-circle"></i> about.me</a></li>
+                <li><a href="#skills"><i class="fab fa-node-js"></i> my.skills</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-folder-open"></i> projects.web</a></li>
+                <li><a href="#contact"><i class="fab fa-git-alt"></i> contact.me</a></li>
             </ul>
+
         </nav>
+
         <main class="ide-main">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <img src="" alt="">
             <section id="about">
-                <h1>Bruno Jubert</h1>
+                <h2>Bruno Jubert</h2>
                 <p>Développeur Web et Web Mobile | 41 ans</p>
                 <p>Passionné de technologies et de musique</p>
             </section>
             <section id="skills">
                 <h2>Compétences</h2>
                 <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Responsive Design</li>
-                    <!-- Ajoutez d'autres compétences ici -->
+                    <li><i class="fab fa-html5"></i> HTML5</li>
+                    <li><i class="fa-brands fa-css3"></i> CSS3</li>
+                    <li><i class="fa-brands fa-sass"></i> Sass</li>
+                    <li><i class="fab fa-js"></i> JavaScript</li>
+                    <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
                 </ul>
             </section>
             <section id="projects">
                 <h2>Projets</h2>
-                <!-- Ajoutez vos projets ici -->
             </section>
             <section id="contact">
                 <h2>Contact</h2>
-                <p>Email : votre@email.com</p>
-                <p>LinkedIn : [Votre profil LinkedIn]</p>
-                <p>GitHub : [Votre profil GitHub]</p>
+                <p><i class="fas fa-envelope"></i> 
+                    <a href="mailto:bruno.jubert.dev@gmail.com">Ecrivez-moi : bruno.jubert.dev@gmail.com</a>
+                </p>
+                <p><i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/bruno-j-a78b7b304/">Connectons-nous</a>
+                </p>
+                <p><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/BrunoJubert">Ma page GitHub</a> </p>
             </section>
         </main>
-        <footer class="ide-footer">
-            <p>&copy; <span id="current-year"></span> Bruno Jubert - Tous droits réservés</p>
-        </footer>
     </div>
+    <footer class="ide-footer">
+        <p>&copy; <span id="current-year"></span> Bruno Jubert - Tous droits réservés</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 
