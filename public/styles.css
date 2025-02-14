@@ -8,24 +8,24 @@
   --icon-about: #ffffff;
   --icon-skills: #12dd2d;
   --icon-projects: #256cb2;
-  --icon-contact: #F05033;
-  --icon-html: #E34F26;
-  --icon-css: #1572B6;
-  --icon-scss: #CD6799;
-  --icon-js: #F7DF1E;
+  --icon-contact: #f05033;
+  --icon-html: #e34f26;
+  --icon-css: #1572b6;
+  --icon-scss: #cd6799;
+  --icon-js: #f7df1e;
   --icon-sql: #5979ae;
   --icon-ng: #a31a13;
-  --icon-node: #8CC84B;
-  --icon-react: #61DAFB;
+  --icon-node: #8cc84b;
+  --icon-react: #61dafb;
   --icon-email: #37b7ee;
-  --icon-linkedin: #0077B5;
+  --icon-linkedin: #0077b5;
   --icon-github: #ffffff;
-  --icon-empathy: #FF69B4;
+  --icon-empathy: #ff69b4;
   --icon-teamwork: #ffffff;
   --icon-organization: #2253f6;
-  --icon-problem-solving: #9C27B0;
-  --icon-anticipation: #FFD700;
-  --icon-creativity: #FF4500;
+  --icon-problem-solving: #9c27b0;
+  --icon-anticipation: #ffd700;
+  --icon-creativity: #ff4500;
 }
 
 * {
@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  font-family: 'Consolas', 'Courier New', monospace;
+  font-family: "Consolas", "Courier New", monospace;
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -96,11 +96,10 @@ body {
 
 .ide-nav li {
   margin-left: 8px;
- 
 }
 
 .ide-nav li:nth-child(3) a {
-    padding-left: 0.5em; /* Réinitialise le padding-left pour le lien "projects.web" s'il existe */
+  padding-left: 0.5em;
 }
 
 .ide-nav a {
@@ -118,57 +117,68 @@ body {
   margin-right: 0.5em;
 }
 
-.ide-nav li:nth-child(1) i { color: var(--icon-about); }
-.ide-nav li:nth-child(2) i { color: var(--icon-skills); }
-.ide-nav li:nth-child(3) > a > i { color: var(--icon-projects); }
-.ide-nav li:nth-child(3) .projects-dropdown i:not(.dropdown-icon) { color: var(--icon-projects); }
-.ide-nav li:nth-child(3) .dropdown-icon { color: var(--text-color); }
-.ide-nav li:nth-child(4) i { color: var(--icon-contact); }
+.ide-nav li:nth-child(1) i {
+  color: var(--icon-about);
+}
+.ide-nav li:nth-child(2) i {
+  color: var(--icon-skills);
+}
+.ide-nav li:nth-child(3) > a > i {
+  color: var(--icon-projects);
+}
+.ide-nav li:nth-child(3) .projects-dropdown i:not(.dropdown-icon) {
+  color: var(--icon-projects);
+}
+.ide-nav li:nth-child(3) .dropdown-icon {
+  color: var(--text-color);
+}
+.ide-nav li:nth-child(4) i {
+  color: var(--icon-contact);
+}
 
 .projects-dropdown {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background: none;
-    border: none;
-    color: var(--text-color);
-    cursor: pointer;
-    padding: 0.5em;
-    font-family: 'Consolas', 'Courier New', monospace;
-    font-size: 1em;
-    text-align: left;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 0.5em;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 1em;
+  text-align: left;
 }
 
 .dropdown-icon {
-    transition: transform 0.3s ease;
-    margin-right: 0.5em;
-    color: var(--text-color);
+  transition: transform 0.3s ease;
+  margin-right: 0.5em;
+  color: var(--text-color);
 }
 
 .projects-dropdown.active .dropdown-icon {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .projects-submenu {
-    display: none;
-    padding-left: 2em;
+  display: none;
+  padding-left: 2em;
 }
 
 .projects-submenu.active {
-    display: block;
+  display: block;
 }
 
 .projects-submenu a {
-    padding: 0.3em 0.5em;
-    color: var(--text-color);
-    text-decoration: none;
-    display: block;
+  padding: 0.3em 0.5em;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
 }
 
 .projects-submenu a:hover {
-    background-color: var(--nav-hover-color);
+  background-color: var(--nav-hover-color);
 }
-
 
 .ide-main {
   flex: 1;
@@ -192,6 +202,51 @@ body {
 .header-section h1 {
   font-size: 2em;
   margin: 0.2em 0;
+}
+
+.animate-slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+#skills h2.animate-slide-in {
+  animation-delay: 0.5s;
+}
+#projects h2.animate-slide-in {
+  animation-delay: 0.5s;
+}
+#contact h2.animate-slide-in {
+  animation-delay: 0.5s;
+}
+
+.header-section h3.animate-slide-in {
+  animation-delay: 0.5s;
+}
+.header-section h1:nth-of-type(1).animate-slide-in {
+  animation-delay: 1s;
+}
+.header-section h1:nth-of-type(2).animate-slide-in {
+  animation-delay: 1.5s;
+}
+.profile-image.animate-slide-in {
+  animation-delay: 2s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reset-animation {
+  animation: none !important;
+  opacity: 0 !important;
+  transform: translateY(20px) !important;
 }
 
 .profile-image {
@@ -221,9 +276,9 @@ h1 {
 ul {
   list-style-type: none;
   margin-top: 10px;
-}   
+}
 
-a { 
+a {
   color: var(--text-color);
   text-decoration: none;
 }
@@ -254,32 +309,56 @@ a {
   margin-bottom: 5px;
 }
 
-
-#skills h3 { 
-    text-decoration: underline;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: center;
+#skills h3 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
 }
 
-#skills .hs-container ul li:nth-child(1) i { color: var(--icon-html); }
-#skills .hs-container ul li:nth-child(2) i { color: var(--icon-css); }
-#skills .hs-container ul li:nth-child(3) i { color: var(--icon-scss); }
-#skills .hs-container ul li:nth-child(4) i { color: var(--icon-js); }
-#skills .hs-container ul li:nth-child(5) i { color: var(--icon-sql); }
-#skills .hs-container ul li:nth-child(6) i { color: var(--icon-ng); }
-#skills .hs-container ul li:nth-child(7) i { color: var(--icon-node); }
-#skills .hs-container ul li:nth-child(8) i { color: var(--icon-react); }
+#skills .hs-container ul li:nth-child(1) i {
+  color: var(--icon-html);
+}
+#skills .hs-container ul li:nth-child(2) i {
+  color: var(--icon-css);
+}
+#skills .hs-container ul li:nth-child(3) i {
+  color: var(--icon-scss);
+}
+#skills .hs-container ul li:nth-child(4) i {
+  color: var(--icon-js);
+}
+#skills .hs-container ul li:nth-child(5) i {
+  color: var(--icon-sql);
+}
+#skills .hs-container ul li:nth-child(6) i {
+  color: var(--icon-ng);
+}
+#skills .hs-container ul li:nth-child(7) i {
+  color: var(--icon-node);
+}
+#skills .hs-container ul li:nth-child(8) i {
+  color: var(--icon-react);
+}
 
-
-#skills .ss-container ul li:nth-child(1) i { color: var(--icon-empathy); }
-#skills .ss-container ul li:nth-child(2) i { color: var(--icon-teamwork); }
-#skills .ss-container ul li:nth-child(3) i { color: var(--icon-organization); }
-#skills .ss-container ul li:nth-child(4) i { color: var(--icon-problem-solving); }
-#skills .ss-container ul li:nth-child(5) i { color: var(--icon-anticipation); }
-#skills .ss-container ul li:nth-child(6) i { color: var(--icon-creativity); }
-
-
+#skills .ss-container ul li:nth-child(1) i {
+  color: var(--icon-empathy);
+}
+#skills .ss-container ul li:nth-child(2) i {
+  color: var(--icon-teamwork);
+}
+#skills .ss-container ul li:nth-child(3) i {
+  color: var(--icon-organization);
+}
+#skills .ss-container ul li:nth-child(4) i {
+  color: var(--icon-problem-solving);
+}
+#skills .ss-container ul li:nth-child(5) i {
+  color: var(--icon-anticipation);
+}
+#skills .ss-container ul li:nth-child(6) i {
+  color: var(--icon-creativity);
+}
 
 #projects {
   margin-bottom: 2em;
@@ -328,8 +407,6 @@ a {
   border: none;
 }
 
-
-
 #contact ul {
   list-style-type: none;
   padding: 0;
@@ -343,15 +420,16 @@ a {
   margin-right: 0.5em;
 }
 
-.oclock { 
-    text-decoration: underline;
+.oclock {
+  text-decoration: underline;
 }
 
 .oclock:hover {
   color: var(--text-hover-color);
 }
 
-.hs-container, .ss-container {
+.hs-container,
+.ss-container {
   margin-bottom: 20px;
   padding: 20px;
 }
@@ -364,10 +442,15 @@ a {
   color: var(--text-hover-color);
 }
 
-#contact li:nth-child(1) i { color: var(--icon-email); }
-#contact li:nth-child(2) i { color: var(--icon-linkedin); }
-#contact li:nth-child(3) i { color: var(--icon-github); }
-
+#contact li:nth-child(1) i {
+  color: var(--icon-email);
+}
+#contact li:nth-child(2) i {
+  color: var(--icon-linkedin);
+}
+#contact li:nth-child(3) i {
+  color: var(--icon-github);
+}
 
 .ide-footer {
   background-color: var(--nav-bg-color);
@@ -400,7 +483,7 @@ a {
   bottom: 0;
   display: flex;
   flex-direction: column;
-  height: 100%; 
+  height: 100%;
   justify-content: space-between;
   background-color: var(--border-color);
   padding: 0 4px;
@@ -456,15 +539,19 @@ a {
 }
 
 @keyframes clickAnimation {
-  0%, 5%, 25%, 100% { 
+  0%,
+  5%,
+  25%,
+  100% {
     transform: translate(0, 0) scale(1);
     opacity: 0;
   }
-  20%, 24% {
+  20%,
+  24% {
     transform: translate(-20px, 2px) scale(1);
     opacity: 1;
   }
-  24.1% { 
+  24.1% {
     transform: translate(-20px, 2px) scale(1);
     opacity: 0;
   }
@@ -494,24 +581,24 @@ a {
     flex: 1;
     margin-left: 12.5em;
   }
-  .header-section { 
+  .header-section {
     margin-top: 80px;
     margin-bottom: 100px;
   }
   .profile-image {
     border-radius: 250px;
     width: 200px;
-  } 
-  #about { 
-    margin-bottom: 100px;  
-}
+  }
+  #about {
+    margin-bottom: 100px;
+  }
   #skills ul {
     grid-template-columns: repeat(2, 1fr);
     font-size: 1.2rem;
     margin-bottom: 100px;
   }
 
-  #projects { 
+  #projects {
     margin-bottom: 100px;
   }
   #projects video,
@@ -519,7 +606,7 @@ a {
     width: 80%;
     height: 400px;
   }
-  #contact { 
+  #contact {
     margin-top: 100px;
   }
 }

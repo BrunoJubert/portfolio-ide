@@ -45,14 +45,29 @@ document
     document.querySelector(".projects-submenu").classList.toggle("active");
   });
 
-  document
-    .querySelector(".vs-code-icon")
-    .addEventListener("click", function () {
-      const meowSound = document.getElementById("meowSound");
-      meowSound.volume = 0.2;
-      meowSound.play();
+document.querySelector(".vs-code-icon").addEventListener("click", function () {
+  const meowSound = document.getElementById("meowSound");
+  meowSound.volume = 0.2;
+  meowSound.play();
+});
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove("reset-animation");
+        entry.target.classList.add("animate-slide-in");
+      } else {
+        entry.target.classList.remove("animate-slide-in");
+        entry.target.classList.add("reset-animation");
+      }
     });
+  },
+  {
+    threshold: 0.1,
+  }
+);
 
-
-
-
+document.querySelectorAll(".animate-slide-in").forEach((el) => {
+  observer.observe(el);
+});
