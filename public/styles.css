@@ -15,6 +15,8 @@
   --icon-js: #F7DF1E;
   --icon-sql: #5979ae;
   --icon-ng: #a31a13;
+  --icon-node: #8CC84B;
+  --icon-react: #61DAFB;
   --icon-email: #37b7ee;
   --icon-linkedin: #0077B5;
   --icon-github: #ffffff;
@@ -177,9 +179,9 @@ a {
 #skills ul {
   margin-right: 0.5rem;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px 10px;
   justify-content: center;
   padding: 0 10px;
@@ -214,6 +216,9 @@ a {
 #skills .hs-container ul li:nth-child(4) i { color: var(--icon-js); }
 #skills .hs-container ul li:nth-child(5) i { color: var(--icon-sql); }
 #skills .hs-container ul li:nth-child(6) i { color: var(--icon-ng); }
+#skills .hs-container ul li:nth-child(7) i { color: var(--icon-node); }
+#skills .hs-container ul li:nth-child(8) i { color: var(--icon-react); }
+
 
 #skills .ss-container ul li:nth-child(1) i { color: var(--icon-empathy); }
 #skills .ss-container ul li:nth-child(2) i { color: var(--icon-teamwork); }
