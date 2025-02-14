@@ -38,6 +38,20 @@ document.addEventListener("DOMContentLoaded", () => {
   currentYearSpan.textContent = currentYear;
 });
 
+document
+  .querySelector(".projects-dropdown")
+  .addEventListener("click", function () {
+    this.classList.toggle("active");
+    document.querySelector(".projects-submenu").classList.toggle("active");
+  });
+
+  document
+    .querySelector(".vs-code-icon")
+    .addEventListener("click", function () {
+      const meowSound = document.getElementById("meowSound");
+      meowSound.volume = 0.2;
+      meowSound.play();
+    });
 
 
 
