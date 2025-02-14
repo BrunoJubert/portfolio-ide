@@ -18,6 +18,12 @@
   --icon-email: #37b7ee;
   --icon-linkedin: #0077B5;
   --icon-github: #ffffff;
+  --icon-empathy: #FF69B4;
+  --icon-teamwork: #ffffff;
+  --icon-organization: #2253f6;
+  --icon-problem-solving: #9C27B0;
+  --icon-anticipation: #FFD700;
+  --icon-creativity: #FF4500;
 }
 
 * {
@@ -125,7 +131,6 @@ body {
 }
 
 .header-section h3 {
-  align-self: flex-start;
   width: 100%;
   text-align: center;
 }
@@ -141,6 +146,119 @@ body {
   border-radius: 50%;
   margin-top: 1em;
 }
+
+section {
+  margin-bottom: 2em;
+  padding-top: 2em;
+}
+
+h2 {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 10px;
+}   
+
+a { 
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+#skills ul {
+  margin-right: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px 10px;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+#skills ul li {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+#skills ul li i {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+
+#skills h3 { 
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#skills .hs-container ul li:nth-child(1) i { color: var(--icon-html); }
+#skills .hs-container ul li:nth-child(2) i { color: var(--icon-css); }
+#skills .hs-container ul li:nth-child(3) i { color: var(--icon-scss); }
+#skills .hs-container ul li:nth-child(4) i { color: var(--icon-js); }
+#skills .hs-container ul li:nth-child(5) i { color: var(--icon-sql); }
+#skills .hs-container ul li:nth-child(6) i { color: var(--icon-ng); }
+
+#skills .ss-container ul li:nth-child(1) i { color: var(--icon-empathy); }
+#skills .ss-container ul li:nth-child(2) i { color: var(--icon-teamwork); }
+#skills .ss-container ul li:nth-child(3) i { color: var(--icon-organization); }
+#skills .ss-container ul li:nth-child(4) i { color: var(--icon-problem-solving); }
+#skills .ss-container ul li:nth-child(5) i { color: var(--icon-anticipation); }
+#skills .ss-container ul li:nth-child(6) i { color: var(--icon-creativity); }
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact li {
+  margin-bottom: 0.5em;
+}
+
+#contact li i {
+  margin-right: 0.5em;
+}
+
+.oclock { 
+    text-decoration: underline;
+}
+
+.oclock:hover {
+  color: var(--text-hover-color);
+}
+
+.hs-container, .ss-container {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#contact a {
+  text-decoration: underline;
+}
+
+#contact a:hover {
+  color: var(--text-hover-color);
+}
+
+#contact li:nth-child(1) i { color: var(--icon-email); }
+#contact li:nth-child(2) i { color: var(--icon-linkedin); }
+#contact li:nth-child(3) i { color: var(--icon-github); }
 
 
 .ide-footer {
@@ -179,6 +297,7 @@ body {
   background-color: var(--border-color);
   padding: 0 4px;
   width: 100%;
+  cursor: pointer;
 }
 
 .vs-code-icon i:first-child {
@@ -195,83 +314,58 @@ body {
   transform: translateY(-14px) translateX(-6px);
 }
 
+.vs-code-icon:hover::before,
+.vs-code-icon:hover::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.vs-code-icon:hover::before {
+  content: "";
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--nav-bg-color) transparent;
+  top: -10px;
+}
+
+.vs-code-icon:hover::after {
+  content: attr(title);
+  background-color: var(--nav-bg-color);
+  color: var(--text-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  top: -35px;
+  font-size: 12px;
+  border: 1px solid var(--border-color);
+}
+
 .ide-footer p {
   flex-grow: 1;
   margin: 0;
-  padding: 0 10px;
 }
 
-section {
-  margin-bottom: 2em;
-  padding-top: 2em;
+@keyframes clickAnimation {
+  0%, 5%, 25%, 100% { 
+    transform: translate(0, 0) scale(1);
+    opacity: 0;
+  }
+  20%, 24% {
+    transform: translate(-20px, 2px) scale(1);
+    opacity: 1;
+  }
+  24.1% { 
+    transform: translate(-20px, 2px) scale(1);
+    opacity: 0;
+  }
 }
 
-
-
-h2 {
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.5em;
-  margin-bottom: 1em;
-  text-align: center;
+.oclock i {
+  display: inline-block;
+  animation: clickAnimation 6s ease-in-out infinite;
 }
-
-h1 {
-  font-size: 2em;
-}
-
-ul {
-  list-style-type: none;
-  margin-top: 10px;
-}   
-
-a { 
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-#skills ul li i {
-  margin-right: 0.5rem;
-}
-
-#skills h3 { 
-    text-decoration: underline;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-#skills ul li:nth-child(1) i { color: var(--icon-html); }
-#skills ul li:nth-child(2) i { color: var(--icon-css); }
-#skills ul li:nth-child(3) i { color: var(--icon-scss); }
-#skills ul li:nth-child(4) i { color: var(--icon-js); }
-#skills ul li:nth-child(5) i { color: var(--icon-sql); }
-#skills ul li:nth-child(6) i { color: var(--icon-ng); }
-
-#contact p i {
-  margin-right: 0.5em;
-}
-
-.oclock { 
-    text-decoration: underline;
-}
-
-
-
-.hs-container {
-  margin-bottom: 20px;  
-  text-align: center;
-}
-
-.ss-container {
-  text-align: center;
-}
-
-#contact a:hover {
-  color: var(--text-hover-color);
-}
-
-#contact p:nth-child(2) i { color: var(--icon-email); }
-#contact p:nth-child(3) i { color: var(--icon-linkedin); }
-#contact p:nth-child(4) i { color: var(--icon-github); }
 
 @media (min-width: 48em) {
   .ide-container {
@@ -292,34 +386,28 @@ a {
     flex: 1;
     margin-left: 12.5em;
   }
-}
-
-
-@keyframes clickAnimation {
-  0%, 2%, 98%, 100% { 
-    transform: translate(0, 0) scale(1);
-    opacity: 0;
+  .header-section { 
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
-  3%, 7% {
-    transform: translate(-20px, 2px) scale(0.95);
-    opacity: 1;
+  .profile-image {
+    border-radius: 250px;
+    width: 200px;
+  } 
+  #about { 
+    margin-bottom: 100px;  
+}
+  #skills ul {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+    margin-bottom: 100px;
   }
-  10%, 97% { 
-    transform: translate(0, 0) scale(1);
-    opacity: 0;
+
+  #projects { 
+    margin-bottom: 100px;
+  }
+
+  #contact { 
+    margin-top: 100px;
   }
 }
-
-.oclock i {
-  display: inline-block;
-  animation: clickAnimation 7s ease-in-out infinite;
-}
-
-.oclock:hover i {
-  animation-play-state: static;
-  opacity: 1;
-}
-
-
-
-
