@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  ideContainer.addEventListener("scroll", closeMenu);
+ideContainer.addEventListener("scroll", closeMenu, { passive: true });
 
   // DATE DYNAMICALLY GENERATED IN FOOTER
   const currentYearSpan = document.getElementById("current-year");
