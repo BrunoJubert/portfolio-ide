@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-ideContainer.addEventListener("scroll", closeMenu, { passive: true });
+  ideContainer.addEventListener("scroll", closeMenu, { passive: true });
 
   // DATE DYNAMICALLY GENERATED IN FOOTER
   const currentYearSpan = document.getElementById("current-year");
@@ -38,6 +38,7 @@ ideContainer.addEventListener("scroll", closeMenu, { passive: true });
   currentYearSpan.textContent = currentYear;
 });
 
+// PROJECTS DROPDOWN
 document
   .querySelector(".projects-dropdown")
   .addEventListener("click", function () {
@@ -45,12 +46,14 @@ document
     document.querySelector(".projects-submenu").classList.toggle("active");
   });
 
+// VS CODE ICON MEOW SOUND
 document.querySelector(".vs-code-icon").addEventListener("click", function () {
   const meowSound = document.getElementById("meowSound");
   meowSound.volume = 0.2;
   meowSound.play();
 });
 
+// INTERSECTION OBSERVER FOR ANIMATIONS
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

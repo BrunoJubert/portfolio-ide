@@ -250,10 +250,10 @@ body {
 }
 
 .profile-image {
-  width: 100px;
+  max-width: auto;
   height: auto;
   border-radius: 50%;
-  margin-top: 1em;
+
 }
 
 section {
