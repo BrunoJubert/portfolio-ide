@@ -4,34 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portfolio de Bruno Jubert, développeur Web & Web Mobile spécialisé en Angular, React, Node.js et PostgreSQL. Découvrez mes projets et contactez-moi !">
+    <meta name="keywords"
+        content="Bruno Jubert, développeur web, web mobile, Angular, React, Node.js, PostgreSQL, portfolio, développeur freelance, projet web">
+    <meta name="author" content="Bruno Jubert">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bruno Jubert - Développeur Web & Web Mobile">
+    <meta property="og:description" content="Découvrez mon portfolio en ligne : projets, compétences et contact.">
+    <meta property="og:image" content="https://brunojubert.github.io/portfolio-ide/public/assets/profil.jpg">
+    <meta property="og:url" content="https://brunojubert.github.io/portfolio-ide/">
+    <meta property="og:site_name" content="Bruno Jubert - Portfolio">
+
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://brunojubert.github.io/portfolio-ide/">
+
     <title>Bruno Jubert - Portfolio</title>
     <link rel="stylesheet" href="./public/styles.css">
     <script src="https://kit.fontawesome.com/68d4cc8734.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./public/assests/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./public/assets/favicon.ico">
 </head>
 
 <body>
     <div class="ide-container">
         <nav class="ide-nav">
             <button class="explorer-menu" aria-label="Menu">
-                <i class="fas fa-chevron-right"></i> PORTFOLIO-NAV
+                <i class="fas fa-chevron-right" aria-hidden="true"></i> PORTFOLIO-NAV
             </button>
             <ul class="nav-menu">
-                <li><a href="#about"><i class="fas fa-user-circle"></i> about.me</a></li>
-                <li><a href="#skills"><i class="fab fa-node-js"></i> my.skills</a></li>
+                <li><a href="#about" aria-label="À propos de moi"><i class="fas fa-user-circle" aria-hidden="true"></i>
+                        about.me</a></li>
+                <li><a href="#skills" aria-label="Mes compétences"><i class="fab fa-node-js" aria-hidden="true"></i>
+                        my.skills</a></li>
                 <li>
-                    <button class="projects-dropdown">
-                        <i class="fas fa-chevron-right dropdown-icon"></i>
-                        <i class="fa-solid fa-folder-open"></i> projects.web
+                    <button class="projects-dropdown" aria-label="Menu déroulant des projets">
+                        <i class="fas fa-chevron-right dropdown-icon" aria-hidden="true"></i>
+                        <i class="fa-solid fa-folder-open" aria-hidden="true"></i> projects.web
                     </button>
                     <ul class="projects-submenu">
-                        <li><a href="#ocoffee">O'Coffee</a></li>
-                        <li><a href="#readme">Read Me BackEnd</a></li>
-                        <li><a href="#sirene">Infos Sirene</a></li>
-                        <li><a href="#mbt">Marius Bojan Trio</a></li>
-                        <li><a href="#thanks">Remerciements</a></li>
+                        <li><a href="#sirene" aria-label="Infos Sirene">Infos Sirene</a></li>
+                        <li><a href="#mbt" aria-label="Marius Bojan Trio">Marius Bojan Trio</a></li>
+                        <li><a href="#thanks" aria-label="Remerciements">Remerciements</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact"><i class="fab fa-git-alt"></i> contact.me</a></li>
+                <li><a href="#contact" aria-label="Me contacter"><i class="fab fa-git-alt" aria-hidden="true"></i>
+                        contact.me</a></li>
             </ul>
         </nav>
 
@@ -40,7 +60,8 @@
                 <h3 class="animate-slide-in">Bienvenue, je suis Bruno,</h3>
                 <h1 class="animate-slide-in">Développeur</h1>
                 <h1 class="animate-slide-in">Web & Web Mobile</h1>
-                <img src="./public/assets/profil.jpg" alt="Bruno Jubert" class="profile-image animate-slide-in">
+                <img src="./public/assets/profil.jpg" alt="Bruno Jubert" class="profile-image animate-slide-in"
+                    aria-label="Image de profil de Bruno Jubert">
             </div>
 
             <section id="about">
@@ -50,37 +71,38 @@
                 <p>D'un ordinateur à un autre, d'une console à une autre (et on pourrait continuer toute la journée), la
                     chance de
                     grandir dans ce monde en constante évolution m'a permis de comprendre que je devais vite m'adapter à
-                    la technologie.
-                    Car la technologie ne s'adaptera pas à nous, à moins que nous puissions la comprendre et la
-                    maîtriser pour la rendre
-                    justement plus "adaptée" et "adaptative".</p>
+                    la technologie. Car la technologie ne s'adaptera pas à nous, à moins que nous puissions la
+                    comprendre et la
+                    maîtriser pour la rendre justement plus "adaptée" et "adaptative".</p>
                 <p>L'opportunité de me former chez O'Clock m'a permis d'en apprendre davantage sur le monde du
-                    développement, de
-                    comprendre que la technologie est un outil qui peut nous aider à résoudre des problèmes, à créer des
-                    solutions et à
-                    rendre le monde meilleur.</p>
+                    développement,
+                    de comprendre que la technologie est un outil qui peut nous aider à résoudre des problèmes, à créer
+                    des
+                    solutions et à rendre le monde meilleur.</p>
             </section>
+
             <section id="skills">
                 <h2 class="animate-slide-in">Compétences</h2>
                 <div class="hs-container">
                     <h3>Hard-Skills</h3>
                     <p>J'ai appris à utiliser de nombreuses technologies durant ma formation chez
-                        <a target="_blank" class="oclock" href="https://oclock.io/"> O'Clock <i
-                                class="fa-solid fa-mouse-pointer"></i></i></a>
+                        <a target="_blank" class="oclock" href="https://oclock.io/" aria-label="Visiter O'Clock">
+                            O'Clock <i class="fa-solid fa-mouse-pointer" aria-hidden="true"></i></a>
                         que j'ai eu le plaisir de valider en décrochant le Titre Professionnel en Décembre 2024.
                         Ci-dessous une liste des technologies qui font de moi le développeur que je suis aujourd'hui.
                     </p>
                     <ul>
-                        <li><i class="fab fa-html5"></i>HTML5</li>
-                        <li><i class="fa-brands fa-css3"></i> CSS3</li>
-                        <li><i class="fa-brands fa-sass"></i> Sass</li>
-                        <li><i class="fab fa-js"></i> JavaScript</li>
-                        <li><i class="fa-solid fa-database"></i> PostgreSQL</li>
-                        <li><i class="fa-brands fa-angular"></i> Angular</li>
-                        <li><i class="fa-brands fa-node"></i>NodeJs</li>
-                        <li><i class="fa-brands fa-react"></i> React</li>
+                        <li><i class="fab fa-html5" aria-hidden="true"></i>HTML5</li>
+                        <li><i class="fa-brands fa-css3" aria-hidden="true"></i> CSS3</li>
+                        <li><i class="fa-brands fa-sass" aria-hidden="true"></i> Sass</li>
+                        <li><i class="fab fa-js" aria-hidden="true"></i> JavaScript</li>
+                        <li><i class="fa-solid fa-database" aria-hidden="true"></i> PostgreSQL</li>
+                        <li><i class="fa-brands fa-angular" aria-hidden="true"></i> Angular</li>
+                        <li><i class="fa-brands fa-node" aria-hidden="true"></i>NodeJs</li>
+                        <li><i class="fa-brands fa-react" aria-hidden="true"></i> React</li>
                     </ul>
                 </div>
+
                 <div class="ss-container">
                     <h3>Soft-Skills</h3>
                     <p>Au delà des compétences techniques, j'ai aussi développé un savoir-être qui fait de moi un
@@ -89,60 +111,28 @@
                         elle donne une idée de ce que je peux apporter à une équipe de développement.
                     </p>
                     <ul>
-                        <li><i class="fa-solid fa-brain"></i> Empathique</li>
-                        <li><i class="fa-solid fa-handshake-simple"></i> Esprit d'équipe</li>
-                        <li><i class="fa-regular fa-calendar-check"></i> Organisé</li>
-                        <li><i class="fa-solid fa-cube"></i> Résoudre des probèmes</li>
-                        <li><i class="fa-solid fa-bolt-lightning"></i></i> Anticiper</li>
-                        <li><i class="fa-solid fa-brush"></i> Créatif</li>
+                        <li><i class="fa-solid fa-brain" aria-hidden="true"></i> Empathique</li>
+                        <li><i class="fa-solid fa-handshake-simple" aria-hidden="true"></i> Esprit d'équipe</li>
+                        <li><i class="fa-regular fa-calendar-check" aria-hidden="true"></i> Organisé</li>
+                        <li><i class="fa-solid fa-cube" aria-hidden="true"></i> Résoudre des probèmes</li>
+                        <li><i class="fa-solid fa-bolt-lightning" aria-hidden="true"></i> Anticiper</li>
+                        <li><i class="fa-solid fa-brush" aria-hidden="true"></i> Créatif</li>
                     </ul>
                 </div>
             </section>
+
             <section id="projects">
                 <h2 class="animate-slide-in">Projets</h2>
 
-                <div id="ocoffee" class="ocoffee">
-                    <h3>O'Coffee</h3>
-                    <p>C'est le premier projet en solo que j'ai réalisé au début de la formation chez O'Clock. Simple en
-                        apparence, mais cela m'a permis
-                        d'en apprendre plus sur ce qu'on a vu en cours.
-                        Vous pouvez voir le dépot en le téléchargeant
-                        <a href="./public/assets/S09-oCoffee-BrunoJubert-master.zip"
-                            download="S09-oCoffee-BrunoJubert-master.zip">ici</a>.
-                    </p>
-                    <video width="350" height="200" controls>
-                        <source src="./public/assets/ocoffee capture.mp4" type="video/mp4">
-                        Votre navigateur ne prend pas en charge les vidéos.
-                    </video>
-                </div>
-
-                <div id="readme" class="readme">
-                    <h3>Read Me BackEnd</h3>
-                    <p>Oui, l'édition d'un README n'est pas un projet en soi, mais les avoir écrits (parce que j'en ai
-                        fait plusieurs) m'a
-                        beaucoup aidé à progresser. J'ai également appris combien il est important d'écrire nos propres
-                        documentations, quitte à
-                        réinterpréter celles qui existent pour mieux les comprendre. Celle-ci est très utile quand on
-                        débute.
-                        Télécharger ce Read Me <a href="./public/assets/ReadmeBackend.md"
-                            download="ReadmeBackend.md">ici</a>.
-                    </p>
-                    <video width="350" height="200" controls>
-                        <source src="./public/assets/readmeBackend.mp4" type="video/mp4">
-                        Votre navigateur ne prend pas en charge les vidéos.
-                    </video>
-                </div>
-
                 <div id="sirene" class="sirene">
                     <h3>Infos Sirene</h3>
-                    <p>Un projet que j'ai commencé pendant mon stage de fin de formation.
-                        Plusieures missions, entre design, intégration, API et les éléments habituels.
-                        Mais aussi l'apprentissage du fabuleux framework Angular.
-                        Une grande modularité, une grande flexibilité et une grande puissance.
-                        Vous pouvez voir le front
-                        <a href="https://github.com/BrunoJubert/InfosSirene-FRONT">ici</a>
-                        et le back <a href="https://github.com/BrunoJubert/InfosSirene-BACK">ici</a> sur mon GitHub.
-                    </p>
+                    <p>Un projet que j'ai commencé pendant mon stage de fin de formation. Plusieurs missions, entre
+                        design, intégration, API et les éléments habituels. Mais aussi l'apprentissage du fabuleux
+                        framework Angular.</p>
+                    <p>Vous pouvez voir le front <a href="https://github.com/BrunoJubert/InfosSirene-FRONT"
+                            aria-label="Voir le dépôt GitHub du front">ici</a>
+                        et le back <a href="https://github.com/BrunoJubert/InfosSirene-BACK"
+                            aria-label="Voir le dépôt GitHub du back">ici</a> sur mon GitHub.</p>
                     <video width="350" height="200" controls>
                         <source src="./public/assets/sirenWebSite.mp4" type="video/mp4">
                         Votre navigateur ne prend pas en charge les vidéos.
@@ -152,71 +142,77 @@
                 <div id="mbt" class="mbt">
                     <h3>Marius Bojan Trio</h3>
                     <p>Un de mes projets les plus aboutis du moment. Ce site vitrine pour musicien est spécial, il
-                        permet
-                        à l'administrateur du site de gérer lui même les contenus du site.
-                        Que ce soit des choses les plus simples comme alimenter les photos du carousel, ou des
-                        choses encore plus utiles comme gérer les dates de ses concerts lui même, ou bien encore afficher
-                        ses projets en cours
-                        ainsi que ses collaborations futures et passées. Le tout via l'accès à un tableau de bord qui
-                        permet de personaliser le site à sa guise.
-                        Un projet donc qui me touche tout particulièrement car je viens moi même du monde de la musique.
+                        permet à l'administrateur du site de gérer lui même les contenus du site.</p>
+                    <p>Un projet donc qui me touche tout particulièrement car je viens moi même du monde de la musique.
                         Télécharger le Front <a href="./public/assets/MariusBojanWebsite-Front-main.zip"
-                            download="MariusBojanWebsite-Front-main.zip">ici</a>
+                            download="MariusBojanWebsite-Front-main.zip" aria-label="Télécharger le front">ici</a>
                         et le Back <a href="./public/assets/MariusBojanWebsite-Back-main.zip"
-                            download="MariusBojanWebsite-Back-main.zip">ici</a>.
-
-                    </p>
+                            download="MariusBojanWebsite-Back-main.zip" aria-label="Télécharger le back">ici</a>.</p>
                     <video width="350" height="400" controls>
                         <source src="./public/assets/Démo-MBT.mp4" type="video/mp4">
                         Votre navigateur ne prend pas en charge les vidéos.
                     </video>
                 </div>
+
                 <div id="thanks" class="thanks">
                     <h3>Remerciements</h3>
-                    <p>
-                        Une vidéo de remerciement pour tous ceux qui m'ont aidé à arriver là où je suis aujourd'hui.
-                    </p>
+                    <p>Une vidéo de remerciement pour tous ceux qui m'ont aidé à arriver là où je suis aujourd'hui.</p>
                     <iframe width="350" height="200" src="https://www.youtube.com/embed/-t2kUcHwqFA?si=LrrKfDXUfPseiR75"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                        aria-label="Vidéo de remerciements">
                     </iframe>
                 </div>
             </section>
 
             <section id="contact">
                 <h2 class="animate-slide-in">Contact</h2>
-                <p>Le meilleur moyen de faire connaissance malgres la distance,
-                    c'est d'aller fouiller ( et si c'est dans les poubelles de votre voisin, bin il faut pas..) <i
-                        class="fa-regular fa-face-grin-beam-sweat fa-beat"></i></p>
+                <p>Le meilleur moyen de faire connaissance malgré la distance, c'est d'aller fouiller (et si c'est dans
+                    les poubelles de votre voisin, bin il faut pas..) <i
+                        class="fa-regular fa-face-grin-beam-sweat fa-beat" aria-hidden="true"></i></p>
                 <ul>
                     <li>
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:bruno.jubert.dev@gmail.com">bruno.jubert.dev@gmail.com</a>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:bruno.jubert.dev@gmail.com"
+                            aria-label="Envoyer un email à Bruno Jubert">bruno.jubert.dev@gmail.com</a>
                     </li>
                     <li>
-                        <i class="fab fa-linkedin"></i>
-                        <a target="_blank" href="https://www.linkedin.com/in/bruno-j-a78b7b304/">Connectons-nous</a>
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <a target="_blank" href="https://www.linkedin.com/in/bruno-j-a78b7b304/"
+                            aria-label="Profil LinkedIn de Bruno Jubert">Connectons-nous</a>
                     </li>
                     <li>
-                        <i class="fab fa-github"></i>
-                        <a target="_blank" href="https://github.com/BrunoJubert">Ma page GitHub</a>
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <a target="_blank" href="https://github.com/BrunoJubert"
+                            aria-label="Page GitHub de Bruno Jubert">Ma page GitHub</a>
                     </li>
                 </ul>
+                <div class="social-share">
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://brunojubert.github.io/portfolio-ide/"
+                        target="_blank" class="share-btn linkedin" aria-label="Partager sur LinkedIn">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i> Partager sur LinkedIn
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://brunojubert.github.io/portfolio-ide/"
+                        target="_blank" class="share-btn facebook" aria-label="Partager sur Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i> Partager sur Facebook
+                    </a>
+                </div>
             </section>
         </main>
     </div>
     <footer class="ide-footer">
         <div class="vs-code-icon-container">
             <div class="vs-code-icon" title="😸Mew">
-                <i class="fas fa-chevron-right"></i>
-                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
             </div>
         </div>
-        <audio id="meowSound" src="./public/assets/ANMLCat_Petit miaulement d un chat (ID 0494)_LS.wav"
-            preload="auto"></audio>
+        <audio id="meowSound" src="./public/assets/ANMLCat_Petit miaulement d un chat (ID 0494)_LS.wav" preload="auto"
+            aria-hidden="true"></audio>
         <p>&copy; <span id="current-year"></span> Bruno Jubert - Tous droits réservés</p>
     </footer>
     <script src="./public/script.js"></script>
 </body>
+
 </html>
