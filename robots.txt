@@ -1,0 +1,6 @@
+# Permet à tous les robots d'explorer tout le site
+User-agent: *
+Disallow:
+
+# Ajoute le sitemap pour aider les moteurs de recherche
+Sitemap: https://brunojubert.github.io/portfolio-ide/sitemap.xml
