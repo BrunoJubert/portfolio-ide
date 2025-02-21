@@ -1,4 +1,4 @@
-import CookieManager from "./cookieManger.js";
+import CookieManager from "./cookieManager.js";
 
 const cookieManager = new CookieManager();
   cookieManager.init();
