@@ -588,6 +588,39 @@ a {
   margin: 0;
 }
 
+#lighthouse {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#lighthouse h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#lighthouse p {
+    font-size: 1.1em;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.gif-container {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px; 
+}
+
+.gif-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
 .cookie-banner {
   position: fixed;
   bottom: 100px; 
