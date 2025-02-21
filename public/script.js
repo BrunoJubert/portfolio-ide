@@ -1,4 +1,13 @@
+import CookieManager from "./cookieManger.js";
+
+const cookieManager = new CookieManager();
+  cookieManager.init();
+
+  
 document.addEventListener("DOMContentLoaded", () => {
+
+  
+
   const explorer = document.querySelector(".explorer-menu");
   const nav = document.querySelector(".nav-menu");
   const navLinks = nav.querySelectorAll("a");
@@ -35,13 +44,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const currentYearSpan = document.getElementById("current-year");
   currentYearSpan.textContent = new Date().getFullYear();
+
+  document.addEventListener("touchstart", () => {}, { passive: true });
+  document.addEventListener("touchmove", () => {}, { passive: true });
+  document.addEventListener("wheel", () => {}, { passive: true });
 });
 
 document
   .querySelector(".projects-dropdown")
   .addEventListener("click", function () {
-    this.classList.toggle("active");
-    document.querySelector(".projects-submenu").classList.toggle("active");
+    requestAnimationFrame(() => {
+      this.classList.toggle("active");
+      document.querySelector(".projects-submenu").classList.toggle("active");
+    });
   });
 
 document.querySelector(".vs-code-icon").addEventListener("click", function () {
@@ -54,14 +69,16 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       const target = entry.target;
-      const addClass = entry.isIntersecting
-        ? "animate-slide-in"
-        : "reset-animation";
-      const removeClass = entry.isIntersecting
-        ? "reset-animation"
-        : "animate-slide-in";
-      target.classList.remove(removeClass);
-      target.classList.add(addClass);
+      requestAnimationFrame(() => {
+        const addClass = entry.isIntersecting
+          ? "animate-slide-in"
+          : "reset-animation";
+        const removeClass = entry.isIntersecting
+          ? "reset-animation"
+          : "animate-slide-in";
+        target.classList.remove(removeClass);
+        target.classList.add(addClass);
+      });
     });
   },
   {

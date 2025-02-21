@@ -34,9 +34,9 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   font-family: "Consolas", "Courier New", monospace;
@@ -586,6 +586,70 @@ a {
 .ide-footer p {
   flex-grow: 1;
   margin: 0;
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 100px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  max-width: 400px;
+  width: 90%;
+  color: #181717;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  z-index: 9000;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0; 
+  transition: opacity 0.5s ease; 
+}
+
+.cookie-banner.visible {
+  opacity: 1; 
+}
+
+.cookie-banner::before {
+  content: '🍪';
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.cookie-banner p {
+  margin-bottom: 15px;
+}
+
+.cookie-banner button {
+  border-radius: 25px;
+  padding: 10px 20px;
+  background: #AA250E;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.cookie-banner button:hover {
+  background-color: #8a1e0b; 
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #333;
 }
 
 @keyframes clickAnimation {
