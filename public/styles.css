@@ -627,7 +627,7 @@ a {
 
 .cookie-banner {
   position: fixed;
-  bottom: 100px; 
+  bottom: 32px; 
   left: 50%;
   transform: translateX(-50%); 
   max-width: 400px;
@@ -638,7 +638,6 @@ a {
   text-align: center;
   z-index: 9000;
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -653,6 +652,7 @@ a {
 .cookie-banner::before {
   content: '';
   display: block;
+  border-radius: 50px;
   width: 100px;
   height: 100px;
   background-image: url('./assets/monsterez.gif');
@@ -678,6 +678,7 @@ a {
 }
 
 .cookie-banner button:hover {
+  box-shadow: 0 4px 6px #00000077;
   background-color: #8a1e0b; 
 }
 
