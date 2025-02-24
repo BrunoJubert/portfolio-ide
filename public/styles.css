@@ -624,6 +624,22 @@ a {
 }
 
 
+/* #footer-links {
+    border-top: 1px solid var(--border-color);
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#footer-links a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+#footer-links a:hover {
+    color: var(--text-hover-color);
+} */
 
 .cookie-banner {
   position: fixed;
