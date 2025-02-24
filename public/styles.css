@@ -627,7 +627,7 @@ a {
 
 .cookie-banner {
   position: fixed;
-  bottom: 350px; 
+  bottom: 180px; 
   left: 50%;
   transform: translateX(-50%); 
   max-width: 300px;
