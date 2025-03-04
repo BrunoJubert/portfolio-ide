@@ -324,26 +324,21 @@ a {
   color: var(--icon-html);
 }
 #skills .hs-container ul li:nth-child(2) i {
-  color: var(--icon-css);
-}
-#skills .hs-container ul li:nth-child(3) i {
   color: var(--icon-scss);
 }
-#skills .hs-container ul li:nth-child(4) i {
+#skills .hs-container ul li:nth-child(3) i {
   color: var(--icon-js);
 }
-#skills .hs-container ul li:nth-child(5) i {
+#skills .hs-container ul li:nth-child(4) i {
   color: var(--icon-sql);
 }
-#skills .hs-container ul li:nth-child(6) i {
+#skills .hs-container ul li:nth-child(5) i {
   color: var(--icon-ng);
 }
-#skills .hs-container ul li:nth-child(7) i {
+#skills .hs-container ul li:nth-child(6) i {
   color: var(--icon-node);
 }
-#skills .hs-container ul li:nth-child(8) i {
-  color: var(--icon-react);
-}
+
 
 #skills .ss-container ul li:nth-child(1) i {
   color: var(--icon-empathy);
