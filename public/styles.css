@@ -290,6 +290,10 @@ a {
   text-decoration: none;
 }
 
+#about { 
+  padding: 1.3em;
+}
+
 #skills ul {
   margin-right: 0.5rem;
   text-align: center;
@@ -359,6 +363,7 @@ a {
 
 #projects {
   margin-bottom: 2em;
+  padding: 1.3em;
 }
 
 #projects h2 {
@@ -402,6 +407,10 @@ a {
 
 #projects .thanks iframe {
   border: none;
+}
+
+#contact {
+  padding: 1.3em;
 }
 
 #contact ul {
@@ -735,7 +744,7 @@ a {
   }
 
   .ide-nav {
-    width: 12.5em;
+    width: 15em;
     height: 100vh;
     border-right: 1px solid var(--border-color);
     border-bottom: none;
@@ -746,7 +755,7 @@ a {
 
   .ide-main {
     flex: 1;
-    margin-left: 12.5em;
+    margin-left: 16em;
   }
   .header-section {
     margin-top: 80px;
