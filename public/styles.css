@@ -767,16 +767,24 @@ a {
   }
   #about {
     margin-bottom: 100px;
+    padding: 5.5em;
   }
+  #skills { 
+    padding: 4.5em;
+  }
+
   #skills ul {
     grid-template-columns: repeat(2, 1fr);
     font-size: 1.2rem;
     margin-bottom: 100px;
+
   }
 
   #projects {
     margin-bottom: 100px;
+    padding: 5.5em;
   }
+
   #projects video,
   #projects iframe {
     width: 80%;
@@ -784,12 +792,16 @@ a {
   }
   #contact {
     margin-top: 100px;
+    padding: 5.5em;
   }
+
   .social-share {
     display: flex;
     flex-direction: row;
     justify-content: center; 
     align-items: center;     
+    gap: 5em;
+    margin-top: 5em;
   }
 
   .cookie-banner {
