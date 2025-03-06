@@ -401,8 +401,9 @@ a {
 
 #projects video,
 #projects iframe {
-  display: block;
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 #projects .thanks iframe {
@@ -462,7 +463,7 @@ a {
 .social-share {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1em;
     margin-top: 20px;
     align-items: center;
 }
@@ -478,14 +479,13 @@ a {
     cursor: pointer;
     border-radius: 30px;
     transition: background 0.3s ease, transform 0.2s ease;
-    width: 80%;
-    max-width: 280px;
+    max-width: 300px;
     justify-content: center;
     text-decoration: none !important;
 }
 
 .share-btn i {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .linkedin {
@@ -775,7 +775,7 @@ a {
 
   #skills ul {
     grid-template-columns: repeat(2, 1fr);
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 100px;
 
   }
@@ -787,6 +787,7 @@ a {
 
   #projects video,
   #projects iframe {
+    margin-left: 6em;
     width: 80%;
     height: 400px;
   }
