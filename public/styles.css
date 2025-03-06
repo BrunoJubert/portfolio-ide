@@ -26,7 +26,153 @@
   --icon-analytical: #9c27b0;
   --icon-curiosity: #0066ff;
   --icon-creativity: #ff4500;
+
+
+  --light-bg-color: #f0f0f0;
+  --light-text-color: #333333; 
+  --light-text-hover-color: #007bff; 
+  --light-nav-bg-color: #e0e0e0;
+  --light-nav-hover-color: #d0d0d0;
+  --light-border-color: #cccccc;
+
+  --light-icon-about: #000000; 
+  --light-icon-github: #000000; 
+  --light-icon-teamwork: #000000;
 }
+
+body.light-theme {
+  background-color: var(--light-bg-color);
+  color: var(--light-text-color);
+}
+
+body.light-theme .ide-nav {
+  background-color: var(--light-nav-bg-color);
+  border-color: var(--light-border-color);
+}
+
+body.light-theme a {
+  color: var(--light-text-color); 
+}
+
+
+body.light-theme a:hover {
+  color: var(--light-text-hover-color); 
+}
+
+body.light-theme .ide-nav a:hover {
+  background-color: var(--light-nav-hover-color);
+}
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3 {
+  color: var(--light-text-color); 
+}
+
+
+body.light-theme .ide-nav li:nth-child(1) i {
+  color: var(--light-icon-about); 
+}
+
+body.light-theme .projects-dropdown {
+    color: #000000 !important; 
+}
+
+
+body.light-theme .projects-dropdown .dropdown-icon {
+    color: #000000 !important; 
+}
+
+body.light-theme #contact li:nth-child(3) i {
+  color: var(--light-icon-github); 
+}
+
+body.light-theme #skills .ss-container ul li:nth-child(2) i {
+    color: var(--light-icon-teamwork);
+}
+
+body.light-theme .linkedin i,
+body.light-theme .facebook i {
+  color: white !important; 
+}
+
+body.light-theme .linkedin,
+body.light-theme .facebook {
+  color: white !important; 
+}
+
+body.light-theme #lighthouse a,
+body.light-theme #footer-links a {
+  color: var(--light-text-color); 
+}
+
+body.light-theme #lighthouse p,
+body.light-theme #footer-links p {
+  color: var(--light-text-color); 
+}
+
+body.light-theme #lighthouse h2,
+body.light-theme #footer-links h2 {
+  color: var(--light-text-color); 
+}
+body.light-theme #lighthouse a:hover,
+body.light-theme #footer-links a:hover {
+  color: var(--light-text-hover-color); 
+}
+
+
+.theme-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.theme-toggle label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.theme-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider i {
+  position: absolute;
+  top: 49%;
+  left: 5px; 
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #333;
+  transition: left 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider i {
+  left: 25px; 
+  color: #fff;
+}
+
+
 
 * {
   margin: 0;

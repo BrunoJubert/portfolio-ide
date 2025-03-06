@@ -48,6 +48,33 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("touchstart", () => {}, { passive: true });
   document.addEventListener("touchmove", () => {}, { passive: true });
   document.addEventListener("wheel", () => {}, { passive: true });
+
+  const themeSwitch = document.getElementById("themeSwitch");
+
+  if (themeSwitch) {
+    themeSwitch.addEventListener("change", () => {
+      console.log("Switch changed");
+      if (themeSwitch.checked) {
+        document.body.classList.add("light-theme");
+        localStorage.setItem("theme", "light");
+      } else {
+        document.body.classList.remove("light-theme");
+        localStorage.setItem("theme", "dark");
+      }
+    });
+
+    const savedTheme = localStorage.getItem("theme");
+    console.log("Saved theme:", savedTheme);
+    if (savedTheme === "dark") {
+      themeSwitch.checked = false;
+      document.body.classList.remove("light-theme");
+    } else {
+      themeSwitch.checked = true;
+      document.body.classList.add("light-theme");
+    }
+  } else {
+    console.error("Theme switch element not found");
+  }
 });
 
 document

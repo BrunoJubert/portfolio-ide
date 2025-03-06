@@ -25,7 +25,7 @@
     <link rel="icon" type="image/x-icon" href="./public/assets/favicon.ico">
 </head>
 
-<body>
+<body class="light-theme">
     <div class="ide-container">
         <nav class="ide-nav">
             <button class="explorer-menu" aria-label="Menu">
@@ -106,7 +106,15 @@
             <audio id="meowSound" src="./public/assets/ANMLCat_Petit miaulement d un chat (ID 0494)_LS.wav"
                 preload="auto" aria-hidden="true"></audio>
 
-            <p>&copy; <span id="current-year"></span> Bruno Jubert - Tous droits réservés</p>
+            <p>&copy; <span id="current-year"></span> Bruno Jubert</p>
+            <div class="theme-toggle">
+            <label>
+                <input type="checkbox" id="themeSwitch" checked>
+                <span class="slider round">
+                    <i class="fas fa-adjust"></i>
+                </span>
+            </label>
+        </div>
         </footer>
 
         <script type="module" src="./public/script.min.js" defer></script>
