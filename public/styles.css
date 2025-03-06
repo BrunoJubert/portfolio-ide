@@ -17,15 +17,14 @@
   --icon-sql: #5979ae;
   --icon-ng: #a31a13;
   --icon-node: #8cc84b;
-  --icon-react: #61dafb;
   --icon-email: #37b7ee;
   --icon-linkedin: #0077b5;
   --icon-github: #ffffff;
   --icon-empathy: #ff69b4;
   --icon-teamwork: #ffffff;
   --icon-organization: #2253f6;
-  --icon-problem-solving: #9c27b0;
-  --icon-anticipation: #ffd700;
+  --icon-analytical: #9c27b0;
+  --icon-curiosity: #0066ff;
   --icon-creativity: #ff4500;
 }
 
@@ -71,7 +70,7 @@ body {
 
 .explorer-menu i {
   transition: transform 0.3s ease;
-  margin-right: 0.5em;
+  margin-right: 01em;
 }
 
 .explorer-menu.active i {
@@ -96,11 +95,11 @@ body {
 }
 
 .ide-nav li {
-  margin-left: 8px;
+  margin-left: 2em;
 }
 
 .ide-nav li:nth-child(3) a {
-  padding-left: 0.5em;
+  padding-left: 0.8em;
 }
 
 .ide-nav a {
@@ -115,7 +114,7 @@ body {
 }
 
 .ide-nav a i {
-  margin-right: 0.5em;
+  margin-right: 1em;
 }
 
 .ide-nav li:nth-child(1) i {
@@ -129,15 +128,19 @@ body {
 }
 .ide-nav li:nth-child(3) .projects-dropdown i:not(.dropdown-icon) {
   color: var(--icon-projects);
+    margin-right: 0.8em;
+
 }
 .ide-nav li:nth-child(3) .dropdown-icon {
   color: var(--text-color);
+  margin-left: 0.1em
 }
 .ide-nav li:nth-child(4) i {
   color: var(--icon-contact);
 }
 .ide-nav li:nth-child(5) i {
   color: var(--icon-lightbulb);
+  margin-right: 1.6em;
 }
 
 .projects-dropdown {
@@ -156,7 +159,7 @@ body {
 
 .dropdown-icon {
   transition: transform 0.3s ease;
-  margin-right: 0.5em;
+  margin-right: 1.8em;
   color: var(--text-color);
 }
 
@@ -290,7 +293,7 @@ a {
 #skills ul {
   margin-right: 0.5rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px 10px;
@@ -341,23 +344,18 @@ a {
 
 
 #skills .ss-container ul li:nth-child(1) i {
-  color: var(--icon-empathy);
+  color: var(--icon-empathy); 
 }
 #skills .ss-container ul li:nth-child(2) i {
-  color: var(--icon-teamwork);
+  color: var(--icon-analytical);
 }
 #skills .ss-container ul li:nth-child(3) i {
-  color: var(--icon-organization);
+  color: var(--icon-curiosity);
 }
 #skills .ss-container ul li:nth-child(4) i {
-  color: var(--icon-problem-solving);
+  color: var(--icon-creativity); 
 }
-#skills .ss-container ul li:nth-child(5) i {
-  color: var(--icon-anticipation);
-}
-#skills .ss-container ul li:nth-child(6) i {
-  color: var(--icon-creativity);
-}
+
 
 #projects {
   margin-bottom: 2em;
@@ -619,7 +617,7 @@ a {
 }
 
 
-/* #footer-links {
+#footer-links {
     border-top: 1px solid var(--border-color);
     max-width: 800px;
     margin: 20px auto;
@@ -634,7 +632,7 @@ a {
 
 #footer-links a:hover {
     color: var(--text-hover-color);
-} */
+}
 
 .cookie-banner {
   position: fixed;
