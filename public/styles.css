@@ -738,6 +738,32 @@ a {
   animation: clickAnimation 6s ease-in-out infinite;
 }
 
+.return-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.return-link:hover {
+    color: #f9c47f; 
+}
+
+.return-link .fa-stack {
+    font-size: 0.8em; 
+}
+
+#confidentialite-content{
+  padding: 2em;
+}
+
+#confidentialite-content h3 {
+  text-align: center;
+  margin-top: 1.5em;
+}
 @media (min-width: 48em) {
   .ide-container {
     flex-direction: row;
@@ -810,6 +836,16 @@ a {
     left: 56%;
     max-width: 800px;  
   }
+
+  #confidentialite-content{
+    padding: 6em;
+  }
+
+  #confidentialite-content h3 {
+    text-align: center;
+    margin-top: 1.5em;
+  }
+
 
 }
 
