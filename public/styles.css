@@ -78,6 +78,10 @@ body.light-theme .projects-dropdown {
     color: #000000 !important; 
 }
 
+body.light-theme .projects-dropdown:hover {
+    background-color: var(--light-nav-hover-color); 
+    color: var(--light-text-hover-color) !important;
+}
 
 body.light-theme .projects-dropdown .dropdown-icon {
     color: #000000 !important; 
@@ -262,6 +266,7 @@ body {
 
 .ide-nav a:hover {
   background-color: var(--nav-hover-color);
+  color: var(--text-hover-color);
 }
 
 .ide-nav a i {
@@ -306,6 +311,11 @@ body {
   font-family: "Consolas", "Courier New", monospace;
   font-size: 1em;
   text-align: left;
+}
+
+.projects-dropdown:hover {
+  background-color: var(--nav-hover-color);
+  color: var(--text-hover-color);
 }
 
 .dropdown-icon {
