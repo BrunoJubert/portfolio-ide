@@ -101,6 +101,11 @@ body.light-theme .facebook {
   color: white !important; 
 }
 
+body.light-theme #contact a:hover {
+  color: var(--light-text-hover-color); 
+}
+
+
 body.light-theme #lighthouse a,
 body.light-theme #footer-links a {
   color: var(--light-text-color); 
