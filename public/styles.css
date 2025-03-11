@@ -129,6 +129,13 @@ body.light-theme #footer-links a:hover {
   color: var(--light-text-hover-color); 
 }
 
+body.light-theme .ide-main #confidentialite-content a {
+  color: var(--light-text-color); 
+}
+
+body.light-theme .ide-main #confidentialite-content a:hover {
+  color: var(--light-text-hover-color); 
+}
 
 .theme-toggle {
   position: absolute;
@@ -667,6 +674,15 @@ a {
 .facebook:hover {
     background-color: #1259c3;
     transform: scale(1.05);
+}
+
+.ide-main #confidentialite-content a {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.ide-main #confidentialite-content a:hover {
+  color: var(--text-hover-color);
 }
 
 .ide-footer {
